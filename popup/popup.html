@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google Maps Scraper</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h3>Google Maps Lead Scraper</h3>
+
+  <!-- Start scraping button -->
+  <button id="scrapeBtn">Scrape Results</button>
+
+  <!-- Status updates -->
+  <div id="status">Idle</div>
+
+  <!-- Preview container -->
+  <div id="preview">
+    <small>Preview will appear here</small>
+  </div>
+
+  <!-- Download Excel button -->
+  <button id="downloadBtn" disabled>Download Excel</button>
+
+  <!-- Include XLSX library -->
+  <script src="../utils/xlsx.full.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* popup.css */
+body {
+  font-family: Arial, sans-serif;
+  width: 360px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#status {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #555;
+}
+
+#preview {
+  margin-top: 8px;
+  max-height: 250px;
+  overflow-y: auto;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+#preview table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+
+#preview th, #preview td {
+  border: 1px solid #ccc;
+  padding: 3px;
+  text-align: left;
+}
+
+#filterInput {
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
