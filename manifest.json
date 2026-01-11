@@ -1,32 +1,24 @@
 {
   "manifest_version": 3,
   "name": "Google Maps Lead Scraper",
-  "version": "1.0",
-  "description": "Scrapes Google Maps results and exports to Excel.",
-  "permissions": [
-    "activeTab",
-    "scripting"
-  ],
+  "version": "1.0.0",
+  
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png", 
+    "128": "assets/icon128.png"
+  },
+
+  "permissions": ["tabs", "scripting", "storage"],
+  "host_permissions": ["https://www.google.com/maps/*"],
+
   "action": {
     "default_popup": "popup/popup.html",
+    "default_title": "Google Maps Lead Scraper",
     "default_icon": {
       "16": "assets/icon16.png",
       "48": "assets/icon48.png",
       "128": "assets/icon128.png"
     }
-  },
-  "background": {
-    "service_worker": "background.js"
-  },
-  "content_scripts": [
-    {
-      "matches": ["https://www.google.com/maps/*"],
-      "js": ["content/scraper.js"]
-    }
-  ],
-  "icons": {
-    "16": "assets/icon16.png",
-    "48": "assets/icon48.png",
-    "128": "assets/icon128.png"
   }
 }
